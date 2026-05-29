@@ -1,65 +1,426 @@
-// Banco de dados dos consoles
+// --- DADOS DOS CONSOLES ---
+// Estrutura completa cobrindo as gerações, modelos e jogos.
 const consoleData = {
-    ps5: {
-        title: "PlayStation®5",
-        tagline: "Jogar Não Tem Limites",
-        desc: "Experimente o carregamento Relâmpago com um SSD de altíssima velocidade, imersão mais profunda com suporte a feedback tátil, gatilhos adaptáveis e áudio 3D, além de uma geração inédita de jogos incríveis para PlayStation®.",
-        img: "https://gmedia.playstation.com/is/image/SIEPDC/playstation-5-with-disc-drive-front-product-shot-01-en-23jul24?$IMAGE_SRC$"
+    ps1: {
+        title: "PlayStation®1",
+        tagline: "Onde tudo começou.",
+        description: "O console que revolucionou a indústria com o uso de CDs e gráficos em 3D, definindo o padrão para os jogos modernos.",
+        buyLink: "https://www.playstation.com/pt-br/playstation-classic/",
+        versions: [
+            {
+                name: "Modelo Original (Fat)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/PSX-Console-wController.png/800px-PSX-Console-wController.png",
+                specs: [
+                    "CPU: MIPS R3000A de 32-bit @ 33.8 MHz",
+                    "Memória RAM: 2 MB RAM Principal + 1 MB VRAM de Vídeo",
+                    "Gráficos: Resolução de 256x224 a 640x480 pixels",
+                    "Armazenamento: Cartão de Memória (Memory Card de 1MB)",
+                    "Mídia Física: Unidade de CD-ROM 2x (Leitura de 300 KB/s)"
+                ]
+            },
+            {
+                name: "PS One (Slim)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/PSone-Console-Set-No-LCD.png/800px-PSone-Console-Set-No-LCD.png",
+                specs: [
+                    "CPU: LSI R3000A customizado @ 33.8 MHz",
+                    "Memória RAM: 2 MB RAM Principal + 1 MB VRAM",
+                    "Gráficos: Coprocessador geométrico integrado na placa",
+                    "Armazenamento: Totalmente compatível com Memory Cards originais",
+                    "Diferencial: Redesign 30% menor e fonte de alimentação externa"
+                ]
+            }
+        ],
+        games: [
+            { name: "Tomb Raider", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" },
+            { name: "Final Fantasy VII", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" },
+            { name: "Crash Bandicoot", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" }
+        ]
     },
-    ps5pro: {
-        title: "PlayStation®5 Pro",
-        tagline: "O ápice do desempenho gamer",
-        desc: "Com o PS5 Pro, você pode jogar com gráficos incrivelmente nítidos a taxas de quadros altas e constantes. Graças ao poder do Ray Tracing avançado e à upscaling baseada em IA (PSSR), seus jogos favoritos atingem um novo patamar de realismo.",
-        img: "https://gmedia.playstation.com/is/image/SIEPDC/ps5-pro-product-shot-01-en-29aug24?$IMAGE_SRC$"
+    ps2: {
+        title: "PlayStation®2",
+        tagline: "O console mais vendido da história.",
+        description: "Com um leitor de DVD embutido e uma biblioteca de jogos colossal, o PS2 mudou os parâmetros da indústria global de entretenimento doméstico.",
+        buyLink: "https://www.playstation.com/",
+        versions: [
+            {
+                name: "Modelo Original (Fat)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/PlayStation_2_Fat_Console.png/800px-PlayStation_2_Fat_Console.png",
+                specs: [
+                    "CPU: Emotion Engine de 64-bit @ 294.9 MHz",
+                    "Memória RAM: 32 MB RDRAM de Sistema + 4 MB VRAM",
+                    "GPU: Graphics Synthesizer @ 147.4 MHz",
+                    "Armazenamento: Memory Card de 8 MB (Expansível)",
+                    "Expansão: Suporte a Disco Rígido (HDD) interno e leitor de DVD"
+                ]
+            },
+            {
+                name: "Modelo Slim",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/PS2-Slim-Console-Set.png/800px-PS2-Slim-Console-Set.png",
+                specs: [
+                    "CPU: Emotion Engine @ 299 MHz (litografia mais eficiente)",
+                    "Memória RAM: 32 MB RDRAM unificada",
+                    "GPU: Graphics Synthesizer integrado com melhor dissipação",
+                    "Armazenamento: Slots de Memory Card integrados de 8 MB",
+                    "Rede: Porta Ethernet RJ-45 integrada diretamente na placa"
+                ]
+            }
+        ],
+        games: [
+            { name: "GTA: San Andreas", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" },
+            { name: "God of War", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" },
+            { name: "Resident Evil 4", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" }
+        ]
     },
-    psvr2: {
-        title: "PlayStation®VR2",
-        tagline: "Vá além da realidade",
-        desc: "Escape para mundos que parecem, parecem e soam completamente reais enquanto a tecnologia de realidade virtual dá um salto geracional massivo com visuais em 4K HDR e controles Sense revolucionários.",
-        img: "https://gmedia.playstation.com/is/image/SIEPDC/ps-vr2-product-shot-01-en-22feb22?$IMAGE_SRC$"
+    psp: {
+        title: "PSP®",
+        tagline: "O poder do PlayStation no seu bolso.",
+        description: "O primeiro portátil da Sony trouxe gráficos que rivalizavam com os consoles de mesa e funcionalidades multimídia incríveis para a época.",
+        buyLink: "https://www.playstation.com/",
+        versions: [
+            {
+                name: "PSP 1000",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Psp-1000.png/800px-Psp-1000.png",
+                specs: [
+                    "CPU: MIPS R4000 Customizado @ 1 a 333 MHz",
+                    "Memória RAM: 32 MB de RAM Principal + 4 MB eDRAM",
+                    "Gráficos: GPU integrada com suporte a 16.77 milhões de cores",
+                    "Armazenamento: Entrada para Memory Stick Duo",
+                    "Mídia Física: Leitor de discos óticos proprietários UMD"
+                ]
+            },
+            {
+                name: "PSP 3000",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/PSP-3000-Console-Black.png/800px-PSP-3000-Console-Black.png",
+                specs: [
+                    "CPU: MIPS R4000 @ 333 MHz",
+                    "Memória RAM: 64 MB de RAM (Dobro do modelo original)",
+                    "Tela: LCD de 4.3 polegadas com melhor contraste e antirreflexo",
+                    "Armazenamento: Suporte a Memory Stick PRO Duo de alta velocidade",
+                    "Extras: Microfone embutido e saída de vídeo para TV"
+                ]
+            }
+        ],
+        games: [
+            { name: "God of War: Ghost of Sparta", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" },
+            { name: "Metal Gear Solid: Peace Walker", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" },
+            { name: "GTA: Liberty City Stories", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" }
+        ]
+    },
+    ps3: {
+        title: "PlayStation®3",
+        tagline: "Jogue além.",
+        description: "A introdução da alta definição (HD), do formato Blu-ray e da PlayStation Network, marcando uma era de narrativas complexas e jogos online.",
+        buyLink: "https://www.playstation.com/",
+        versions: [
+            {
+                name: "Modelo Original (Fat)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Sony-PlayStation-3-CECHA01-wController-L.png/800px-Sony-PlayStation-3-CECHA01-wController-L.png",
+                specs: [
+                    "CPU: Cell Broadband Engine @ 3.2 GHz (1 PPE + 7 SPEs)",
+                    "Memória RAM: 256 MB XDR Main RAM + 256 MB GDDR3 VRAM",
+                    "GPU: RSX 'Reality Synthesizer' baseada na NVIDIA @ 550 MHz",
+                    "Armazenamento: HDD SATA de 20GB, 40GB, 60GB ou 80GB",
+                    "Mídia Física: Leitor de Blu-ray Disc pioneiro (2x velocidade)"
+                ]
+            },
+            {
+                name: "Modelo Slim",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Sony-PlayStation-3-2001A-wController-L.png/800px-Sony-PlayStation-3-2001A-wController-L.png",
+                specs: [
+                    "CPU: Cell Engine redesenhado em litografia de 45nm",
+                    "Memória RAM: 256 MB XDR + 256 MB GDDR3 VRAM",
+                    "GPU: RSX otimizada para menor emissão de calor",
+                    "Armazenamento: HDD SATA interno de 120GB, 160GB ou 320GB",
+                    "Consumo: Redução de 34% no gasto de energia elétrica"
+                ]
+            },
+            {
+                name: "Modelo Super Slim",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Sony-PlayStation-3-4001B-wController-L.png/800px-Sony-PlayStation-3-4001B-wController-L.png",
+                specs: [
+                    "CPU: Cell Engine em 45nm otimizado para baixo ruído",
+                    "Memória RAM: 256 MB XDR RAM + 256 MB GDDR3 VRAM",
+                    "GPU: RSX de alta eficiência energética",
+                    "Armazenamento: Memória Flash de 12GB ou HDDs de 250GB/500GB",
+                    "Construção: Mecanismo de tampa mecânica corrediça superior"
+                ]
+            }
+        ],
+        games: [
+            { name: "The Last of Us", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" },
+            { name: "Uncharted 2", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" },
+            { name: "Metal Gear Solid 4", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" }
+        ]
+    },
+    psvita: {
+        title: "PS Vita",
+        tagline: "A vida em jogo.",
+        description: "Um portátil com hardware poderoso, tela OLED impressionante e dois controles analógicos, oferecendo experiências de console na palma da mão.",
+        buyLink: "https://www.playstation.com/",
+        versions: [
+            {
+                name: "Modelo PCH-1000 (OLED)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/PlayStation_Vita_illustration.png/800px-PlayStation_Vita_illustration.png",
+                specs: [
+                    "CPU: ARM Cortex-A9 de 4 núcleos @ até 444 MHz",
+                    "Memória RAM: 512 MB de RAM Principal + 128 MB VRAM de Vídeo",
+                    "GPU: PowerVR SGX543MP4+ de 4 núcleos",
+                    "Tela: Painel OLED multitoque capacitivo de 5 polegadas",
+                    "Armazenamento: Slot para cartões de memória PS Vita proprietários"
+                ]
+            },
+            {
+                name: "Modelo PCH-2000 (Slim)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Playstation-Vita-2000-Black-Left-Angle.png/800px-Playstation-Vita-2000-Black-Left-Angle.png",
+                specs: [
+                    "CPU: ARM Cortex-A9 de 4 núcleos",
+                    "Memória RAM: 512 MB RAM + 128 MB VRAM",
+                    "Tela: Alterada para painel LCD IPS (Cores mais realistas)",
+                    "Armazenamento: 1 GB de armazenamento interno integrado",
+                    "Diferencial: Conector Micro-USB padrão e bateria de maior duração"
+                ]
+            }
+        ],
+        games: [
+            { name: "Persona 4 Golden", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" },
+            { name: "Gravity Rush", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" },
+            { name: "Uncharted: Golden Abyss", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" }
+        ]
     },
     ps4: {
         title: "PlayStation®4",
-        tagline: "Jogos incríveis e entretenimento sem fim",
-        desc: "O console PS4 oferece poder de jogo incrível, entretenimento espetacular e tecnologia HDR vibrante para acompanhar uma biblioteca lendária de jogos clássicos que definiram a história recente do mundo gamer.",
-        img: "https://gmedia.playstation.com/is/image/SIEPDC/ps4-slim-image-block-01-en-24jul20?$IMAGE_SRC$"
+        tagline: "Para os jogadores.",
+        description: "O console que definiu a oitava geração, focado em facilidade de desenvolvimento, compartilhamento social e uma biblioteca de jogos exclusivos aclamados.",
+        buyLink: "https://www.playstation.com/pt-br/ps4/",
+        versions: [
+            {
+                name: "PS4 Original / Slim",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Sony-PlayStation-4-Slim-Console-wController.png/800px-Sony-PlayStation-4-Slim-Console-wController.png",
+                specs: [
+                    "CPU: AMD 'Jaguar' x86-64 Custom de 8 núcleos @ 1.6 GHz",
+                    "Memória RAM: 8 GB GDDR5 Unificada (Largura de banda de 176 GB/s)",
+                    "GPU: AMD Radeon Customizada de 1.84 TFLOPS",
+                    "Armazenamento: HDD Mecânico SATA de 500 GB ou 1 TB",
+                    "Mídia Física: Unidade ótica Blu-ray 6x CAV / DVD 8x CAV"
+                ]
+            },
+            {
+                name: "PS4 Pro",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sony-PlayStation-4-Pro-wController-L.png/800px-Sony-PlayStation-4-Pro-wController-L.png",
+                specs: [
+                    "CPU: AMD 'Jaguar' de 8 núcleos com overclock para 2.1 GHz",
+                    "Memória RAM: 8 GB GDDR5 Unificada + 1 GB DDR3 de sistema",
+                    "GPU: AMD Radeon GCN aprimorada de 4.20 TFLOPS",
+                    "Armazenamento: HDD SATA III de 1 TB (Melhor taxa de barramento)",
+                    "Imagem: Suporte nativo e via Checkerboard para saídas em 4K HDR"
+                ]
+            }
+        ],
+        games: [
+            { name: "Red Dead Redemption 2", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" },
+            { name: "The Witcher 3: Wild Hunt", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" },
+            { name: "Elden Ring", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" }
+        ]
+    },
+    ps5: {
+        title: "PlayStation®5",
+        tagline: "Jogar não tem limites.",
+        description: "Tempos de carregamento ultrarrápidos, imersão tátil com o DualSense e gráficos de tirar o fôlego graças ao Ray Tracing.",
+        buyLink: "https://www.playstation.com/pt-br/ps5/",
+        versions: [
+            {
+                name: "Modelo Original (Com Disco)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/PlayStation_5_and_DualSense_with_transparent_background.png/800px-PlayStation_5_and_DualSense_with_transparent_background.png",
+                specs: [
+                    "CPU: AMD Zen 2 Custom de 8 núcleos e 16 threads @ 3.5 GHz",
+                    "Memória RAM: 16 GB GDDR6 Customizada (Banda de 448 GB/s)",
+                    "GPU: Arquitetura AMD RDNA 2 com 10.28 TFLOPS e Ray Tracing",
+                    "Armazenamento: SSD NVMe Customizado ultrarrápido de 825 GB",
+                    "Mídia Física: Drive Ultra HD Blu-ray de até 100 GB por disco"
+                ]
+            },
+            {
+                name: "Edição Digital",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/PlayStation_5_Digital_Edition_with_DualSense_transparent_background.png/800px-PlayStation_5_Digital_Edition_with_DualSense_transparent_background.png",
+                specs: [
+                    "CPU: AMD Zen 2 Customizado de 8 núcleos @ 3.5 GHz",
+                    "Memória RAM: 16 GB GDDR6 Unificada de alta velocidade",
+                    "GPU: Processamento gráfico AMD RDNA 2 de 10.28 TFLOPS",
+                    "Armazenamento: SSD NVMe de Alto Desempenho com 825 GB",
+                    "Mídia Física: Sem leitor. Downloads digitais via PS Store"
+                ]
+            },
+            {
+                name: "PS5 Pro",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/PlayStation_5_and_DualSense_with_transparent_background.png/800px-PlayStation_5_and_DualSense_with_transparent_background.png",
+                specs: [
+                    "CPU: AMD Zen 2 Otimizado com modo de alta frequência",
+                    "Memória RAM: 16 GB GDDR6 + 2 GB DDR5 dedicados ao SO",
+                    "GPU: Atualizada com 67% mais unidades de processamento (Renderização 45% mais rápida)",
+                    "Armazenamento: SSD NVMe Expandido nativamente para 2 TB",
+                    "Tecnologia Pro: PSSR (Upscaling por IA) e Ray Tracing Avançado"
+                ]
+            }
+        ],
+        games: [
+            { name: "Ghost of Yōtei", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" },
+            { name: "Demon's Souls", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" },
+            { name: "Death Stranding 2: On the Beach", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" }
+        ]
+    },
+    psvr: {
+        title: "PlayStation® VR",
+        tagline: "Sinta uma nova realidade.",
+        description: "A entrada da PlayStation no mundo da realidade virtual, colocando você dentro do jogo com um campo de visão imersivo.",
+        buyLink: "https://www.playstation.com/pt-br/ps-vr2/",
+        versions: [
+            {
+                name: "PS VR (Para PS4)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PlayStation_VR_Headset.png/800px-PlayStation_VR_Headset.png",
+                specs: [
+                    "Painel: Tela OLED de 5.7 polegadas",
+                    "Resolução: 1920x1080 Full HD (960x1080 por cada olho)",
+                    "Taxa de Atualização: Suporta 90Hz e 120Hz com baixa latência",
+                    "Campo de Visão: Aproximadamente 100 graus",
+                    "Sensores: Sistema de rastreamento de 360 graus por LEDs"
+                ]
+            },
+            {
+                name: "PS VR2 (Para PS5)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/PlayStation_VR2.png/800px-PlayStation_VR2.png",
+                specs: [
+                    "Painel: Telas OLED HDR de última geração",
+                    "Resolução: Alta definição de 2000x2040 pixels por olho",
+                    "Campo de Visão: Expandido para 110 graus",
+                    "Recursos Avançados: Rastreamento ocular por IA e vibração no headset",
+                    "Controles: Controles Sense com Feedback Tátil e Gatilhos Adaptáveis"
+                ]
+            }
+        ],
+        games: [
+            { name: "Horizon Call of the Mountain", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" },
+            { name: "Astro Bot Rescue Mission", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" },
+            { name: "Beat Saber", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" }
+        ]
     }
 };
 
-// Seleção dos elementos do DOM
+// --- ELEMENTOS DO DOM ---
 const buttons = document.querySelectorAll('.console-btn');
-const imgEl = document.getElementById('display-img');
-const titleEl = document.getElementById('display-title');
-const taglineEl = document.getElementById('display-tagline');
-const descEl = document.getElementById('display-desc');
+const displayImg = document.getElementById('display-img');
+const displayTitle = document.getElementById('display-title');
+const displayTagline = document.getElementById('display-tagline');
+const displayDesc = document.getElementById('display-desc');
+const buyLink = document.getElementById('buy-link');
+const displaySpecs = document.getElementById('display-specs');
+const displayGames = document.getElementById('display-games');
 
-// Adiciona o evento de clique para cada botão do menu
-buttons.forEach(button => {
-    button.addEventListener('click', (event) => {
-        // Remove a classe active de todos os botões
-        buttons.forEach(btn => btn.classList.remove('active'));
-        
-        // Adiciona a classe active no botão clicado
-        event.currentTarget.classList.add('active');
-        
-        // Pega a chave do console (ps5, ps4, etc) definida no HTML
-        const consoleKey = event.currentTarget.getAttribute('data-console');
-        
-        // Efeito suave de transição (fade out)
-        imgEl.style.opacity = 0;
-        titleEl.style.opacity = 0;
-        
-        setTimeout(() => {
-            // Altera o conteúdo baseado no objeto consoleData
-            imgEl.src = consoleData[consoleKey].img;
-            imgEl.alt = consoleData[consoleKey].title;
-            titleEl.innerText = consoleData[consoleKey].title;
-            taglineEl.innerText = consoleData[consoleKey].tagline;
-            descEl.innerText = consoleData[consoleKey].desc;
-            
-            // Retorna a opacidade (fade in)
-            imgEl.style.opacity = 1;
-            titleEl.style.opacity = 1;
-        }, 150);
+const versionList = document.getElementById('version-list');
+const currentVersionBtn = document.getElementById('current-version-btn');
+
+// --- LÓGICA PRINCIPAL ---
+
+// Função para atualizar os dados gerais do Console
+function updateConsole(consoleKey) {
+    const data = consoleData[consoleKey];
+    if (!data) return;
+
+    // Efeito de transição de opacidade
+    document.getElementById('console-display').style.opacity = 0;
+    document.getElementById('console-extra').style.opacity = 0;
+
+    setTimeout(() => {
+        // Atualiza textos e link principais
+        displayTitle.textContent = data.title;
+        displayTagline.textContent = data.tagline;
+        displayDesc.textContent = data.description;
+        buyLink.href = data.buyLink;
+
+        // Atualiza as seções extras (Modelos/Versões e Jogos)
+        renderVersionDropdown(data.versions);
+        renderGames(data.games);
+
+        // Seleciona o primeiro modelo por padrão
+        selectVersion(data.versions[0]);
+
+        // Retorna a opacidade
+        document.getElementById('console-display').style.opacity = 1;
+        document.getElementById('console-extra').style.opacity = 1;
+    }, 200);
+}
+
+// Função para preencher o Menu Dropdown de Modelos
+function renderVersionDropdown(versions) {
+    versionList.innerHTML = ''; // Limpa os botões anteriores
+
+    versions.forEach(version => {
+        const btn = document.createElement('button');
+        btn.textContent = version.name;
+        btn.onclick = () => selectVersion(version);
+        versionList.appendChild(btn);
     });
+}
+
+// Função para atualizar a Imagem e Especificações baseadas no Modelo selecionado
+function selectVersion(version) {
+    // Atualiza a imagem com fade
+    displayImg.style.opacity = 0;
+    setTimeout(() => {
+        displayImg.src = version.image;
+        displayImg.style.opacity = 1;
+    }, 150);
+
+    // Atualiza o botão do dropdown para mostrar o nome do modelo atual
+    currentVersionBtn.innerHTML = `${version.name} &#9662;`;
+
+    // Renderiza as especificações em lista <ul>
+    displaySpecs.innerHTML = '';
+    version.specs.forEach(spec => {
+        const li = document.createElement('li');
+        li.textContent = spec;
+        displaySpecs.appendChild(li);
+    });
+}
+
+// Função para renderizar o grid de Jogos de Sucesso
+function renderGames(games) {
+    displayGames.innerHTML = ''; // Limpa o grid
+
+    games.forEach(game => {
+        const card = document.createElement('div');
+        card.className = 'game-card';
+
+        const img = document.createElement('img');
+        img.src = game.image;
+        img.alt = game.name;
+
+        const title = document.createElement('span');
+        title.textContent = game.name;
+
+        card.appendChild(img);
+        card.appendChild(title);
+        displayGames.appendChild(card);
+    });
+}
+
+// --- INICIALIZAÇÃO E EVENTOS ---
+
+// Event listeners para os botões do menu superior (PS1, PS2, etc.)
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove a classe 'active' de todos e adiciona no clicado
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        // Pega a chave do console pelo data-attribute e atualiza a tela
+        const consoleKey = button.getAttribute('data-console');
+        updateConsole(consoleKey);
+    });
+});
+
+// Inicializa a página com o console ativo (que no seu HTML tem a classe 'active' no PS5)
+window.addEventListener('DOMContentLoaded', () => {
+    const activeBtn = document.querySelector('.console-btn.active');
+    const startConsole = activeBtn ? activeBtn.getAttribute('data-console') : 'ps5';
+    updateConsole(startConsole);
 });
