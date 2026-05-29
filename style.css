@@ -1,0 +1,237 @@
+/* --- RESET E VARIÁVEIS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --ps-blue: #00439c;
+    --ps-light-blue: #0072ce;
+    --ps-dark: #1f1f1f;
+    --ps-black: #0a0a0a;
+    --ps-white: #ffffff;
+    --ps-gray: #b5b5b5;
+}
+
+body {
+    background-color: var(--ps-black);
+    color: var(--ps-white);
+    overflow-x: hidden;
+}
+
+/* --- NAVBAR --- */
+header {
+    background-color: var(--ps-black);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--ps-white);
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo span {
+    color: var(--ps-light-blue);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: var(--ps-white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--ps-light-blue);
+}
+
+.btn-login {
+    background-color: var(--ps-blue);
+    color: var(--ps-white);
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-login:hover {
+    background-color: var(--ps-light-blue);
+}
+
+/* --- HERO BANNER --- */
+.hero {
+    margin-top: 80px;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(10,10,10,1)), url('https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=1920&q=80') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- CONSOLE INTERACTIVE SECTION --- */
+.interactive-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Menu de Abas (Console Selector) */
+.console-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.console-btn {
+    background-color: #111;
+    border: 2px solid #333;
+    color: var(--ps-gray);
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.console-btn:hover {
+    border-color: var(--ps-light-blue);
+    color: var(--ps-white);
+}
+
+.console-btn.active {
+    background-color: var(--ps-blue);
+    border-color: var(--ps-light-blue);
+    color: var(--ps-white);
+    box-shadow: 0 0 15px rgba(0, 114, 206, 0.5);
+}
+
+/* Área de Conteúdo Dinâmico */
+.console-display {
+    background: linear-gradient(145deg, #151515, #050505);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    min-height: 450px;
+    border: 1px solid #222;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.console-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.console-image img {
+    max-width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.7));
+    transition: opacity 0.2s ease;
+}
+
+.console-info {
+    flex: 1;
+    transition: opacity 0.2s ease;
+}
+
+.console-info h3 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: var(--ps-white);
+}
+
+.display-tagline {
+    font-size: 1.2rem;
+    color: var(--ps-light-blue);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.console-description {
+    color: var(--ps-gray);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+.btn-buy {
+    display: inline-block;
+    background-color: #ff4500;
+    color: white;
+    padding: 12px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn-buy:hover {
+    transform: scale(1.05);
+    background-color: #ff5714;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--ps-blue);
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+    color: var(--ps-white);
+    font-size: 0.9rem;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    header { padding: 20px; }
+    nav { display: none; }
+    .hero h1 { font-size: 2.2rem; }
+    .console-display { flex-direction: column; text-align: center; padding: 20px; }
+    .console-info h3 { font-size: 2rem; }
+}
