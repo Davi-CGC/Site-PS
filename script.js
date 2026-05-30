@@ -5,11 +5,11 @@ const consoleData = {
         title: "PlayStation®1",
         tagline: "Onde tudo começou.",
         description: "O console que revolucionou a indústria com o uso de CDs e gráficos em 3D, definindo o padrão para os jogos modernos.",
-        buyLink: "https://www.playstation.com/pt-br/playstation-classic/",
+        buyLink: "ps1.jpeg",
         versions: [
             {
                 name: "Modelo Original (Fat)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/PSX-Console-wController.png/800px-PSX-Console-wController.png",
+                image: "ps1.jpeg",
                 specs: [
                     "CPU: MIPS R3000A de 32-bit @ 33.8 MHz",
                     "Memória RAM: 2 MB RAM Principal + 1 MB VRAM de Vídeo",
@@ -20,7 +20,7 @@ const consoleData = {
             },
             {
                 name: "PS One (Slim)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/PSone-Console-Set-No-LCD.png/800px-PSone-Console-Set-No-LCD.png",
+                image: "PSone-Console-Set-NoLCD.jpg",
                 specs: [
                     "CPU: LSI R3000A customizado @ 33.8 MHz",
                     "Memória RAM: 2 MB RAM Principal + 1 MB VRAM",
@@ -31,9 +31,9 @@ const consoleData = {
             }
         ],
         games: [
-            { name: "Tomb Raider", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" },
-            { name: "Final Fantasy VII", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" },
-            { name: "Crash Bandicoot", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" }
+            { name: "Tomb Raider", image: "tomb-raider-playstation-capa-1.jpeg" },
+            { name: "Final Fantasy VII", image: "final-fantasy-vii_c-1.jpeg" },
+            { name: "Crash Bandicoot", image: "Crash_Bandicoot_1_capa.png" }
         ]
     },
     ps2: {
@@ -44,7 +44,7 @@ const consoleData = {
         versions: [
             {
                 name: "Modelo Original (Fat)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/PlayStation_2_Fat_Console.png/800px-PlayStation_2_Fat_Console.png",
+                image: "PS2-Fat-Console-Set.jpg",
                 specs: [
                     "CPU: Emotion Engine de 64-bit @ 294.9 MHz",
                     "Memória RAM: 32 MB RDRAM de Sistema + 4 MB VRAM",
@@ -55,7 +55,7 @@ const consoleData = {
             },
             {
                 name: "Modelo Slim",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/PS2-Slim-Console-Set.png/800px-PS2-Slim-Console-Set.png",
+                image: "PS2-Slim-Console-Set.png",
                 specs: [
                     "CPU: Emotion Engine @ 299 MHz (litografia mais eficiente)",
                     "Memória RAM: 32 MB RDRAM unificada",
@@ -66,9 +66,9 @@ const consoleData = {
             }
         ],
         games: [
-            { name: "GTA: San Andreas", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" },
-            { name: "God of War", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" },
-            { name: "Resident Evil 4", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" }
+            { name: "GTA: San Andreas", image: "Grand_Theft_Auto_San_Andreas_capa.png" },
+            { name: "God of War", image: "God_of_War_capa.png" },
+            { name: "Resident Evil 4", image: "RE_4_capa.jpeg" }
         ]
     },
     psp: {
@@ -78,32 +78,65 @@ const consoleData = {
         buyLink: "https://www.playstation.com/",
         versions: [
             {
-                name: "PSP 1000",
+                name: "PSP-1000 (Fat)",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Psp-1000.png/800px-Psp-1000.png",
                 specs: [
-                    "CPU: MIPS R4000 Customizado @ 1 a 333 MHz",
-                    "Memória RAM: 32 MB de RAM Principal + 4 MB eDRAM",
-                    "Gráficos: GPU integrada com suporte a 16.77 milhões de cores",
-                    "Armazenamento: Entrada para Memory Stick Duo",
-                    "Mídia Física: Leitor de discos óticos proprietários UMD"
+                    "CPU: MIPS R4000 Core Customizado (32-bit) @ 1 a 333 MHz",
+                    "Memória RAM: 32 MB de RAM Principal + 4 MB eDRAM incorporada",
+                    "Armazenamento: Leitor de cartões Memory Stick Duo / PRO Duo",
+                    "Mídia Física: Drive ótico para discos UMD (Universal Media Disc)",
+                    "Hardware Físico: Peso de 280g, tela LCD TFT de 4.3\" (480x272)"
                 ]
             },
             {
-                name: "PSP 3000",
+                name: "PSP-2000 (Slim & Lite)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Sony-PSP-2000-Home.jpg/800px-Sony-PSP-2000-Home.jpg",
+                specs: [
+                    "CPU: MIPS R4000 Customizado de 32-bit @ 333 MHz",
+                    "Memória RAM: 64 MB de RAM (O dobro da capacidade do Fat)",
+                    "Armazenamento: Slot Memory Stick Duo com leitura acelerada",
+                    "Mídia Física: Leitor UMD com carregamento mecânico otimizado",
+                    "Conectividade Pro: Adicionada saída de vídeo para TV e recarga via USB"
+                ]
+            },
+            {
+                name: "PSP-3000 (Brite)",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/PSP-3000-Console-Black.png/800px-PSP-3000-Console-Black.png",
                 specs: [
-                    "CPU: MIPS R4000 @ 333 MHz",
-                    "Memória RAM: 64 MB de RAM (Dobro do modelo original)",
-                    "Tela: LCD de 4.3 polegadas com melhor contraste e antirreflexo",
-                    "Armazenamento: Suporte a Memory Stick PRO Duo de alta velocidade",
-                    "Extras: Microfone embutido e saída de vídeo para TV"
+                    "CPU: MIPS R4000 de 32-bit @ 333 MHz",
+                    "Memória RAM: 64 MB de RAM Principal",
+                    "Tela (Hardware): LCD aprimorado com maior gama de cores, antirreflexo e contraste 5x maior",
+                    "Áudio/Componentes: Microfone embutido de fábrica para Skype e jogos",
+                    "Mídia: Mantém o leitor de UMD físico e slot de Memory Stick"
+                ]
+            },
+            {
+                name: "PSP Go (N1000)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Sony-PSP-Go-Closed-Bl.jpg/800px-Sony-PSP-Go-Closed-Bl.jpg",
+                specs: [
+                    "CPU: MIPS R4000 de 32-bit @ 333 MHz",
+                    "Memória RAM: 64 MB de RAM Principal",
+                    "Armazenamento Nativo: 16 GB de memória Flash interna incorporada",
+                    "Mídia Física: REMOVIDO o leitor UMD (Console focado 100% em downloads digitais)",
+                    "Conectividade: Slot para cartões Micro Memory Stick (M2) e Bluetooth 2.0 integrado"
+                ]
+            },
+            {
+                name: "PSP-E1000 (Street)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Sony-PSP-E1000-Cons-L.jpg/800px-Sony-PSP-E1000-Cons-L.jpg",
+                specs: [
+                    "CPU: MIPS R4000 de 32-bit @ 333 MHz",
+                    "Memória RAM: 64 MB de RAM Principal",
+                    "Corte de Hardware: REMOVIDA a placa de rede Wi-Fi (Jogos transferidos via PC/USB)",
+                    "Áudio (Hardware): Som alterado para coluna monofónica (Apenas 1 saída de som)",
+                    "Mídia Física: Possui leitor de discos UMD e slot para Memory Stick PRO Duo"
                 ]
             }
         ],
         games: [
-            { name: "God of War: Ghost of Sparta", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" },
-            { name: "Metal Gear Solid: Peace Walker", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" },
-            { name: "GTA: Liberty City Stories", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" }
+            { name: "God of War: Ghost of Sparta", image: "God_of_War_Ghost_of_Sparta_capa.png" },
+            { name: "Metal Gear Solid: Peace Walker", image: "Metal-Gear-Solid-Peace-Walker.jpeg" },
+            { name: "GTA: Liberty City Stories", image: "GTALibertyCityStories-Capa.png" }
         ]
     },
     ps3: {
@@ -147,9 +180,9 @@ const consoleData = {
             }
         ],
         games: [
-            { name: "The Last of Us", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" },
-            { name: "Uncharted 2", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" },
-            { name: "Metal Gear Solid 4", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" }
+            { name: "The Last of Us", image: "The_Last_of_Us_capa.png" },
+            { name: "Uncharted 2", image: "uncharted-capa.jpeg" },
+            { name: "Metal Gear Solid 4", image: "Metal-Gear-Solid-4.jpeg" }
         ]
     },
     psvita: {
@@ -182,44 +215,55 @@ const consoleData = {
             }
         ],
         games: [
-            { name: "Persona 4 Golden", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" },
-            { name: "Gravity Rush", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" },
-            { name: "Uncharted: Golden Abyss", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" }
+            { name: "Persona 4 Golden", image: "persona-4-golden.jpeg" },
+            { name: "Gravity Rush", image: "gravity-rush-capa.jpeg" },
+            { name: "Uncharted: Golden Abyss", image: "uncharted-golden-abyss-capa.jpeg" }
         ]
     },
     ps4: {
         title: "PlayStation®4",
         tagline: "Para os jogadores.",
-        description: "O console que definiu a oitava geração, focado em facilidade de desenvolvimento, compartilhamento social e uma biblioteca de jogos exclusivos aclamados.",
-        buyLink: "https://www.playstation.com/pt-br/ps4/",
+        description: "A consola que definiu a oitava geração, focada em facilidade de desenvolvimento, partilha social e uma biblioteca de jogos exclusivos aclamados.",
+        buyLink: "https://www.playstation.com/pt-pt/ps4/",
         versions: [
             {
-                name: "PS4 Original / Slim",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Sony-PlayStation-4-Slim-Console-wController.png/800px-Sony-PlayStation-4-Slim-Console-wController.png",
+                name: "PS4 \"Fat\" (Séries CUH-10xx a 12xx)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Sony-PlayStation-4-Console-wController-L.jpg/800px-Sony-PlayStation-4-Console-wController-L.jpg",
                 specs: [
+                    "Design: Formato em paralelogramo angular com uma barra de luz LED central.",
+                    "Acabamento: Mistura de plástico fosco com tampa do HDD em plástico brilhante (black piano).",
                     "CPU: AMD 'Jaguar' x86-64 Custom de 8 núcleos @ 1.6 GHz",
-                    "Memória RAM: 8 GB GDDR5 Unificada (Largura de banda de 176 GB/s)",
                     "GPU: AMD Radeon Customizada de 1.84 TFLOPS",
-                    "Armazenamento: HDD Mecânico SATA de 500 GB ou 1 TB",
-                    "Mídia Física: Unidade ótica Blu-ray 6x CAV / DVD 8x CAV"
+                    "Memória RAM: 8 GB GDDR5 Unificada"
                 ]
             },
             {
-                name: "PS4 Pro",
+                name: "PS4 Slim (Série CUH-20xx)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Sony-PlayStation-4-Slim-Console-wController.png/800px-Sony-PlayStation-4-Slim-Console-wController.png",
+                specs: [
+                    "Design: Muito menor, mais leve e com bordas arredondadas (substituiu o modelo Fat).",
+                    "Acabamento: Totalmente fosco, abandonando a secção 'black piano'.",
+                    "Eficiência: Consome menos energia elétrica que o modelo original.",
+                    "Conectividade: Sofreu a remoção da saída de áudio ótico digital.",
+                    "Hardware: Mantém a mesma potência gráfica e de processamento do modelo Fat."
+                ]
+            },
+            {
+                name: "PS4 Pro (Série CUH-70xx)",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sony-PlayStation-4-Pro-wController-L.png/800px-Sony-PlayStation-4-Pro-wController-L.png",
                 specs: [
+                    "Design: Visual em três 'camadas' (parecendo três placas empilhadas), sendo maior que o modelo Fat.",
                     "CPU: AMD 'Jaguar' de 8 núcleos com overclock para 2.1 GHz",
-                    "Memória RAM: 8 GB GDDR5 Unificada + 1 GB DDR3 de sistema",
-                    "GPU: AMD Radeon GCN aprimorada de 4.20 TFLOPS",
-                    "Armazenamento: HDD SATA III de 1 TB (Melhor taxa de barramento)",
-                    "Imagem: Suporte nativo e via Checkerboard para saídas em 4K HDR"
+                    "GPU: Arquitetura melhorada com o dobro da potência (4.20 TFLOPS)",
+                    "Desempenho: Projetada para rodar jogos com resolução até 4K e melhor taxa de fotogramas (FPS).",
+                    "Extra: Desempenho e suporte aprimorado para o PlayStation VR."
                 ]
             }
         ],
         games: [
-            { name: "Red Dead Redemption 2", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" },
-            { name: "The Witcher 3: Wild Hunt", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" },
-            { name: "Elden Ring", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" }
+            { name: "Red Dead Redemption 2", image: "Red_Dead_Redemption_2.png" },
+            { name: "The Witcher 3: Wild Hunt", image: "the_wicher_3.jpeg" },
+            { name: "Elden Ring", image: "elden-ring-capa.jpeg" }
         ]
     },
     ps5: {
@@ -263,9 +307,9 @@ const consoleData = {
             }
         ],
         games: [
-            { name: "Ghost of Yōtei", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" },
-            { name: "Demon's Souls", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" },
-            { name: "Death Stranding 2: On the Beach", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" }
+            { name: "Ghost of Yōtei", image: "ghost-of-yotei.jpeg" },
+            { name: "Demon's Souls", image: "Demons_Souls_remake_capa.png" },
+            { name: "Death Stranding 2: On the Beach", image: "death-stranding-2.jpeg" }
         ]
     },
     psvr: {
@@ -298,9 +342,9 @@ const consoleData = {
             }
         ],
         games: [
-            { name: "Horizon Call of the Mountain", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" },
-            { name: "Astro Bot Rescue Mission", image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=400&q=80" },
-            { name: "Beat Saber", image: "https://images.unsplash.com/photo-1605901309584-818e25960b8f?auto=format&fit=crop&w=400&q=80" }
+            { name: "Horizon Call of the Mountain", image: "horizon-call-of-the-mountain-vr.jpeg" },
+            { name: "Astro Bot Rescue Mission", image: "astro-bot-rescue-mission-vr.jpeg" },
+            { name: "Beat Saber", image: "beat-saber-vr.jpeg" }
         ]
     }
 };
