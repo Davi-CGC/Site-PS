@@ -1,13 +1,13 @@
 const consoleData = {
     ps1: {
-        title: "PlayStation®1",
+        title: "PlayStation 1",
         tagline: "Onde tudo começou.",
         description: "O console que revolucionou a indústria com o uso de CDs e gráficos em 3D, definindo o padrão para os jogos modernos.",
         buyLink: "https://www.playstation.com/",
         versions: [
             {
                 name: "Modelo Original (Fat)",
-                image: "ps1.jpeg",
+                image: "fotos consoles/PS1.png",
                 specs: [
                     "CPU: MIPS R3000A de 32-bit @ 33.8 MHz",
                     "Memória RAM: 2 MB RAM Principal + 1 MB VRAM de Vídeo",
@@ -18,7 +18,7 @@ const consoleData = {
             },
             {
                 name: "PS One (Slim)",
-                image: "PSone-Console-Set-NoLCD.jpg",
+                image: "fotos consoles/PS1-slim.webp",
                 specs: [
                     "CPU: LSI R3000A customizado @ 33.8 MHz",
                     "Memória RAM: 2 MB RAM Principal + 1 MB VRAM",
@@ -29,20 +29,20 @@ const consoleData = {
             }
         ],
         games: [
-            { name: "Tomb Raider", image: "tomb-raider-playstation-capa-1.jpeg" },
-            { name: "Final Fantasy VII", image: "final-fantasy-vii_c-1.jpeg" },
-            { name: "Crash Bandicoot", image: "Crash_Bandicoot_1_capa.png" }
+            { name: "Tomb Raider", image: "Fotos jogos/tomb-raider-playstation-capa-1.jpeg" },
+            { name: "Final Fantasy VII", image: "Fotos jogos/final-fantasy-VII-capa-1.jpeg" },
+            { name: "Crash Bandicoot", image: "Fotos jogos/Crash_Bandicoot_1_capa.png" }
         ]
     },
     ps2: {
-        title: "PlayStation®2",
+        title: "PlayStation 2",
         tagline: "O console mais vendido da história.",
         description: "Com um leitor de DVD embutido e uma biblioteca de jogos colossal, o PS2 mudou os parâmetros da indústria global de entretenimento doméstico.",
         buyLink: "https://www.playstation.com/",
         versions: [
             {
                 name: "Modelo Original (Fat)",
-                image: "PS2-Fat-Console-Set.jpg",
+                image: "fotos consoles/PS2-Fat.png",
                 specs: [
                     "CPU: Emotion Engine de 64-bit @ 294.9 MHz",
                     "Memória RAM: 32 MB RDRAM de Sistema + 4 MB VRAM",
@@ -53,7 +53,7 @@ const consoleData = {
             },
             {
                 name: "Modelo Slim",
-                image: "PS2-Slim-Console-Set.png",
+                image: "fotos consoles/PS2-Slim-Console-Set.png",
                 specs: [
                     "CPU: Emotion Engine @ 299 MHz (litografia mais eficiente)",
                     "Memória RAM: 32 MB RDRAM unificada",
@@ -64,20 +64,20 @@ const consoleData = {
             }
         ],
         games: [
-            { name: "GTA: San Andreas", image: "Grand_Theft_Auto_San_Andreas_capa.png" },
-            { name: "God of War", image: "God_of_War_capa.png" },
-            { name: "Resident Evil 4", image: "RE_4_capa.jpeg" }
+            { name: "GTA: San Andreas", image: "Fotos jogos/Grand_Theft_Auto_San_Andreas_capa.png" },
+            { name: "God of War", image: "Fotos jogos/God_of_War_capa.png" },
+            { name: "Resident Evil 4", image: "Fotos jogos/RE_4_capa.jpeg" }
         ]
     },
     psp: {
-        title: "PSP®",
+        title: "PSP",
         tagline: "O poder do PlayStation no seu bolso.",
         description: "O primeiro portátil da Sony trouxe gráficos que rivalizavam com os consoles de mesa e funcionalidades multimídia incríveis para a época.",
         buyLink: "https://www.playstation.com/",
         versions: [
             {
                 name: "PSP-1000 (Fat)",
-                image: "psp-1000-fat.jpeg",
+                image: "fotos consoles/PSP-1000.png",
                 specs: [
                     "CPU: MIPS R4000 Core Customizado (32-bit) @ 1 a 333 MHz",
                     "Memória RAM: 32 MB de RAM Principal + 4 MB eDRAM incorporada",
@@ -88,7 +88,7 @@ const consoleData = {
             },
             {
                 name: "PSP-2000 (Slim & Lite)",
-                image: "psp-2000.webp",
+                image: "fotos consoles/psp-2000.webp",
                 specs: [
                     "CPU: MIPS R4000 Customizado de 32-bit @ 333 MHz",
                     "Memória RAM: 64 MB de RAM (O dobro da capacidade do Fat)",
@@ -99,7 +99,7 @@ const consoleData = {
             },
             {
                 name: "PSP-3000 (Brite)",
-                image: "PSP-3000.png",
+                image: "fotos consoles/PSP-3000.png",
                 specs: [
                     "CPU: MIPS R4000 de 32-bit @ 333 MHz",
                     "Memória RAM: 64 MB de RAM Principal",
@@ -110,7 +110,7 @@ const consoleData = {
             },
             {
                 name: "PSP Go (N1000)",
-                image: "PSP-go.png",
+                image: "fotos consoles/PSP-go.png",
                 specs: [
                     "CPU: MIPS R4000 de 32-bit @ 333 MHz",
                     "Memória RAM: 64 MB de RAM Principal",
@@ -121,7 +121,7 @@ const consoleData = {
             },
             {
                 name: "PSP-E1000 (Street)",
-                image: "PSP-E1000.png",
+                image: "fotos consoles/PSP-E1000.png",
                 specs: [
                     "CPU: MIPS R4000 de 32-bit @ 333 MHz",
                     "Memória RAM: 64 MB de RAM Principal",
@@ -132,20 +132,20 @@ const consoleData = {
             }
         ],
         games: [
-            { name: "God of War: Ghost of Sparta", image: "God_of_War_Ghost_of_Sparta_capa.png" },
-            { name: "Metal Gear Solid: Peace Walker", image: "Metal-Gear-Solid-Peace-Walker.jpeg" },
-            { name: "GTA: Liberty City Stories", image: "GTALibertyCityStories-Capa.png" }
+            { name: "God of War: Ghost of Sparta", image: "Fotos jogos/God_of_War_Ghost_of_Sparta_capa.png" },
+            { name: "Metal Gear Solid: Peace Walker", image: "Fotos jogos/Metal-Gear-Solid-Peace-Walker.jpeg" },
+            { name: "GTA: Liberty City Stories", image: "Fotos jogos/GTALibertyCityStories-Capa.png" }
         ]
     },
     ps3: {
-        title: "PlayStation®3",
+        title: "PlayStation 3",
         tagline: "Jogue além.",
         description: "A introdução da alta definição (HD), do formato Blu-ray e da PlayStation Network, marcando uma era de narrativas complexas e jogos online.",
         buyLink: "https://www.playstation.com/",
         versions: [
             {
                 name: "Modelo Original (Fat)",
-                image: "PS3-fat.png",
+                image: "fotos consoles/PS3-fat.png",
                 specs: [
                     "CPU: Cell Broadband Engine @ 3.2 GHz (1 PPE + 7 SPEs)",
                     "Memória RAM: 256 MB XDR Main RAM + 256 MB GDDR3 VRAM",
@@ -156,7 +156,7 @@ const consoleData = {
             },
             {
                 name: "Modelo Slim",
-                image: "PS3-slim.webp",
+                image: "fotos consoles/PS3-slim.webp",
                 specs: [
                     "CPU: Cell Engine redesenhado em litografia de 45nm",
                     "Memória RAM: 256 MB XDR + 256 MB GDDR3 VRAM",
@@ -167,7 +167,7 @@ const consoleData = {
             },
             {
                 name: "Modelo Super Slim",
-                image: "PS3-super-slim.webp",
+                image: "fotos consoles/PS3-super-slim.webp",
                 specs: [
                     "CPU: Cell Engine em 45nm otimizado para baixo ruído",
                     "Memória RAM: 256 MB XDR RAM + 256 MB GDDR3 VRAM",
@@ -178,9 +178,9 @@ const consoleData = {
             }
         ],
         games: [
-            { name: "The Last of Us", image: "The_Last_of_Us_capa.png" },
-            { name: "Uncharted 2", image: "uncharted-capa.jpeg" },
-            { name: "Metal Gear Solid 4", image: "Metal-Gear-Solid-4.jpeg" }
+            { name: "The Last of Us", image: "Fotos jogos/The_Last_of_Us_capa.png" },
+            { name: "Uncharted 2", image: "Fotos jogos/uncharted-capa.jpeg" },
+            { name: "Metal Gear Solid 4", image: "Fotos jogos/Metal-Gear-Solid-4.jpeg" }
         ]
     },
     psvita: {
@@ -191,7 +191,7 @@ const consoleData = {
         versions: [
             {
                 name: "Modelo PCH-1000 (OLED)",
-                image: "PS-VITA-1000.wepb.webp",
+                image: "fotos consoles/PS-VITA-1000.wepb.webp",
                 specs: [
                     "CPU: ARM Cortex-A9 de 4 núcleos @ até 444 MHz",
                     "Memória RAM: 512 MB de RAM Principal + 128 MB VRAM de Vídeo",
@@ -202,7 +202,7 @@ const consoleData = {
             },
             {
                 name: "Modelo PCH-2000 (Slim)",
-                image: "PS-VITA-2000.webp",
+                image: "fotos consoles/PS-vita-2000.png",
                 specs: [
                     "CPU: ARM Cortex-A9 de 4 núcleos",
                     "Memória RAM: 512 MB RAM + 128 MB VRAM",
@@ -213,20 +213,20 @@ const consoleData = {
             }
         ],
         games: [
-            { name: "Persona 4 Golden", image: "persona-4-golden.jpeg" },
-            { name: "Gravity Rush", image: "gravity-rush-capa.jpeg" },
-            { name: "Uncharted: Golden Abyss", image: "uncharted-golden-abyss-capa.jpeg" }
+            { name: "Persona 4 Golden", image: "Fotos jogos/persona-4-golden.jpeg" },
+            { name: "Gravity Rush", image: "Fotos jogos/gravity-rush-capa.jpeg" },
+            { name: "Uncharted: Golden Abyss", image: "Fotos jogos/uncharted-golden-abyss-capa.jpeg" }
         ]
     },
     ps4: {
-        title: "PlayStation®4",
+        title: "PlayStation 4",
         tagline: "Para os jogadores.",
         description: "A consola que definiu a oitava geração, focada em facilidade de desenvolvimento, partilha social e uma biblioteca de jogos exclusivos aclamados.",
         buyLink: "https://www.playstation.com/pt-pt/ps4/",
         versions: [
             {
-                name: "PS4 \"Fat\" (Séries CUH-10xx a 12xx)",
-                image: "PS4-fat.webp",
+                name: "PS4 Fat",
+                image: "fotos consoles/PS4-fat.webp",
                 specs: [
                     "Design: Formato em paralelogramo angular com uma barra de luz LED central.",
                     "Acabamento: Mistura de plástico fosco com tampa do HDD em plástico brilhante (black piano).",
@@ -236,8 +236,8 @@ const consoleData = {
                 ]
             },
             {
-                name: "PS4 Slim (Série CUH-20xx)",
-                image: "PS4-slim.webp",
+                name: "PS4 Slim",
+                image: "fotos consoles/PS4-slim.webp",
                 specs: [
                     "Design: Muito menor, mais leve e com bordas arredondadas (substituiu o modelo Fat).",
                     "Acabamento: Totalmente fosco, abandonando a secção 'black piano'.",
@@ -247,8 +247,8 @@ const consoleData = {
                 ]
             },
             {
-                name: "PS4 Pro (Série CUH-70xx)",
-                image: "PS4-pro.webp",
+                name: "PS4 Pro",
+                image: "fotos consoles/PS4-pro.webp",
                 specs: [
                     "Design: Visual em três 'camadas' (parecendo três placas empilhadas), sendo maior que o modelo Fat.",
                     "CPU: AMD 'Jaguar' de 8 núcleos com overclock para 2.1 GHz",
@@ -259,20 +259,20 @@ const consoleData = {
             }
         ],
         games: [
-            { name: "Red Dead Redemption 2", image: "Red_Dead_Redemption_2.png" },
-            { name: "The Witcher 3: Wild Hunt", image: "the_wicher_3.jpeg" },
-            { name: "Elden Ring", image: "elden-ring-capa.jpeg" }
+            { name: "Red Dead Redemption 2", image: "Fotos jogos/Red_Dead_Redemption_2.png" },
+            { name: "The Witcher 3: Wild Hunt", image: "Fotos jogos/the_wicher_3.jpeg" },
+            { name: "Elden Ring", image: "Fotos jogos/elden-ring-capa.jpeg" }
         ]
     },
     ps5: {
-        title: "PlayStation®5",
+        title: "PlayStation 5",
         tagline: "Jogar não tem limites.",
         description: "Tempos de carregamento ultrarrápidos, imersão tátil com o DualSense e gráficos de tirar o fôlego graças ao Ray Tracing.",
         buyLink: "https://www.playstation.com/pt-br/ps5/",
         versions: [
             {
                 name: "Modelo Original (Com Disco)",
-                image: "PS5-com-leitor.png",
+                image: "fotos consoles/PS5-com-leitor.webp",
                 specs: [
                     "CPU: AMD Zen 2 Custom de 8 núcleos e 16 threads @ 3.5 GHz",
                     "Memória RAM: 16 GB GDDR6 Customizada (Banda de 448 GB/s)",
@@ -283,7 +283,7 @@ const consoleData = {
             },
             {
                 name: "Edição Digital",
-                image: "PS5-sem-leitor.png",
+                image: "fotos consoles/PS5-sem-leitor.png",
                 specs: [
                     "CPU: AMD Zen 2 Customizado de 8 núcleos @ 3.5 GHz",
                     "Memória RAM: 16 GB GDDR6 Unificada de alta velocidade",
@@ -294,7 +294,7 @@ const consoleData = {
             },
             {
                 name: "PS5 Pro",
-                image: "PS5-pro.webp",
+                image: "fotos consoles/PS5-pro.webp",
                 specs: [
                     "CPU: AMD Zen 2 Otimizado com modo de alta frequência",
                     "Memória RAM: 16 GB GDDR6 + 2 GB DDR5 dedicados ao SO",
@@ -305,20 +305,20 @@ const consoleData = {
             }
         ],
         games: [
-            { name: "Ghost of Yōtei", image: "ghost-of-yotei.jpeg" },
-            { name: "Demon's Souls", image: "Demons_Souls_remake_capa.png" },
-            { name: "Death Stranding 2: On the Beach", image: "death-stranding-2.jpeg" }
+            { name: "Ghost of Yōtei", image: "Fotos jogos/ghost-of-yotei.jpeg" },
+            { name: "Demon's Souls", image: "Fotos jogos/Demons_Souls_remake_capa.png" },
+            { name: "Death Stranding 2: On the Beach", image: "Fotos jogos/death-stranding-2.jpeg" }
         ]
     },
     psvr: {
-        title: "PlayStation® VR",
+        title: "PlayStation VR",
         tagline: "Sinta uma nova realidade.",
         description: "A entrada da PlayStation no mundo da realidade virtual, colocando você dentro do jogo com um campo de visão imersivo.",
         buyLink: "https://www.playstation.com/pt-br/ps-vr2/",
         versions: [
             {
                 name: "PS VR (Para PS4)",
-                image: "PS-VR-01.webp",
+                image: "fotos consoles/PS-VR-01.webp",
                 specs: [
                     "Painel: Tela OLED de 5.7 polegadas",
                     "Resolução: 1920x1080 Full HD (960x1080 por cada olho)",
@@ -329,7 +329,7 @@ const consoleData = {
             },
             {
                 name: "PS VR2 (Para PS5)",
-                image: "PS-VR-02.webp",
+                image: "fotos consoles/PS-VR-02.webp",
                 specs: [
                     "Painel: Telas OLED HDR de última geração",
                     "Resolução: Alta definição de 2000x2040 pixels por olho",
@@ -340,9 +340,9 @@ const consoleData = {
             }
         ],
         games: [
-            { name: "Horizon Call of the Mountain", image: "horizon-call-of-the-mountain-vr.jpeg" },
-            { name: "Astro Bot Rescue Mission", image: "astro-bot-rescue-mission-vr.jpeg" },
-            { name: "Beat Saber", image: "beat-saber-vr.jpeg" }
+            { name: "Horizon Call of the Mountain", image: "Fotos jogos/horizon-call-of-the-mountain-vr.jpeg" },
+            { name: "Astro Bot Rescue Mission", image: "Fotos jogos/astro-bot-rescue-mission-vr.jpeg" },
+            { name: "Beat Saber", image: "Fotos jogos/beat-saber-vr.jpeg" }
         ]
     }
 };
