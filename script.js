@@ -1,5 +1,3 @@
-// --- DADOS DOS CONSOLES ---
-// Estrutura completa cobrindo as gerações, modelos e jogos.
 const consoleData = {
     ps1: {
         title: "PlayStation®1",
@@ -79,7 +77,7 @@ const consoleData = {
         versions: [
             {
                 name: "PSP-1000 (Fat)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Psp-1000.png/800px-Psp-1000.png",
+                image: "psp-1000-fat.jpeg",
                 specs: [
                     "CPU: MIPS R4000 Core Customizado (32-bit) @ 1 a 333 MHz",
                     "Memória RAM: 32 MB de RAM Principal + 4 MB eDRAM incorporada",
@@ -90,7 +88,7 @@ const consoleData = {
             },
             {
                 name: "PSP-2000 (Slim & Lite)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Sony-PSP-2000-Home.jpg/800px-Sony-PSP-2000-Home.jpg",
+                image: "psp-2000.webp",
                 specs: [
                     "CPU: MIPS R4000 Customizado de 32-bit @ 333 MHz",
                     "Memória RAM: 64 MB de RAM (O dobro da capacidade do Fat)",
@@ -101,7 +99,7 @@ const consoleData = {
             },
             {
                 name: "PSP-3000 (Brite)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/PSP-3000-Console-Black.png/800px-PSP-3000-Console-Black.png",
+                image: "PSP-3000.png",
                 specs: [
                     "CPU: MIPS R4000 de 32-bit @ 333 MHz",
                     "Memória RAM: 64 MB de RAM Principal",
@@ -112,7 +110,7 @@ const consoleData = {
             },
             {
                 name: "PSP Go (N1000)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Sony-PSP-Go-Closed-Bl.jpg/800px-Sony-PSP-Go-Closed-Bl.jpg",
+                image: "PSP-go.png",
                 specs: [
                     "CPU: MIPS R4000 de 32-bit @ 333 MHz",
                     "Memória RAM: 64 MB de RAM Principal",
@@ -123,7 +121,7 @@ const consoleData = {
             },
             {
                 name: "PSP-E1000 (Street)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Sony-PSP-E1000-Cons-L.jpg/800px-Sony-PSP-E1000-Cons-L.jpg",
+                image: "PSP-E1000.png",
                 specs: [
                     "CPU: MIPS R4000 de 32-bit @ 333 MHz",
                     "Memória RAM: 64 MB de RAM Principal",
@@ -147,7 +145,7 @@ const consoleData = {
         versions: [
             {
                 name: "Modelo Original (Fat)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Sony-PlayStation-3-CECHA01-wController-L.png/800px-Sony-PlayStation-3-CECHA01-wController-L.png",
+                image: "PS3-fat.png",
                 specs: [
                     "CPU: Cell Broadband Engine @ 3.2 GHz (1 PPE + 7 SPEs)",
                     "Memória RAM: 256 MB XDR Main RAM + 256 MB GDDR3 VRAM",
@@ -158,7 +156,7 @@ const consoleData = {
             },
             {
                 name: "Modelo Slim",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Sony-PlayStation-3-2001A-wController-L.png/800px-Sony-PlayStation-3-2001A-wController-L.png",
+                image: "PS3-slim.webp",
                 specs: [
                     "CPU: Cell Engine redesenhado em litografia de 45nm",
                     "Memória RAM: 256 MB XDR + 256 MB GDDR3 VRAM",
@@ -169,7 +167,7 @@ const consoleData = {
             },
             {
                 name: "Modelo Super Slim",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Sony-PlayStation-3-4001B-wController-L.png/800px-Sony-PlayStation-3-4001B-wController-L.png",
+                image: "PS3-super-slim.webp",
                 specs: [
                     "CPU: Cell Engine em 45nm otimizado para baixo ruído",
                     "Memória RAM: 256 MB XDR RAM + 256 MB GDDR3 VRAM",
@@ -193,7 +191,7 @@ const consoleData = {
         versions: [
             {
                 name: "Modelo PCH-1000 (OLED)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/PlayStation_Vita_illustration.png/800px-PlayStation_Vita_illustration.png",
+                image: "PS-VITA-1000.wepb.webp",
                 specs: [
                     "CPU: ARM Cortex-A9 de 4 núcleos @ até 444 MHz",
                     "Memória RAM: 512 MB de RAM Principal + 128 MB VRAM de Vídeo",
@@ -204,7 +202,7 @@ const consoleData = {
             },
             {
                 name: "Modelo PCH-2000 (Slim)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Playstation-Vita-2000-Black-Left-Angle.png/800px-Playstation-Vita-2000-Black-Left-Angle.png",
+                image: "PS-VITA-2000.webp",
                 specs: [
                     "CPU: ARM Cortex-A9 de 4 núcleos",
                     "Memória RAM: 512 MB RAM + 128 MB VRAM",
@@ -228,7 +226,7 @@ const consoleData = {
         versions: [
             {
                 name: "PS4 \"Fat\" (Séries CUH-10xx a 12xx)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Sony-PlayStation-4-Console-wController-L.jpg/800px-Sony-PlayStation-4-Console-wController-L.jpg",
+                image: "PS4-fat.webp",
                 specs: [
                     "Design: Formato em paralelogramo angular com uma barra de luz LED central.",
                     "Acabamento: Mistura de plástico fosco com tampa do HDD em plástico brilhante (black piano).",
@@ -239,7 +237,7 @@ const consoleData = {
             },
             {
                 name: "PS4 Slim (Série CUH-20xx)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Sony-PlayStation-4-Slim-Console-wController.png/800px-Sony-PlayStation-4-Slim-Console-wController.png",
+                image: "PS4-slim.webp",
                 specs: [
                     "Design: Muito menor, mais leve e com bordas arredondadas (substituiu o modelo Fat).",
                     "Acabamento: Totalmente fosco, abandonando a secção 'black piano'.",
@@ -250,7 +248,7 @@ const consoleData = {
             },
             {
                 name: "PS4 Pro (Série CUH-70xx)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sony-PlayStation-4-Pro-wController-L.png/800px-Sony-PlayStation-4-Pro-wController-L.png",
+                image: "PS4-pro.webp",
                 specs: [
                     "Design: Visual em três 'camadas' (parecendo três placas empilhadas), sendo maior que o modelo Fat.",
                     "CPU: AMD 'Jaguar' de 8 núcleos com overclock para 2.1 GHz",
@@ -274,7 +272,7 @@ const consoleData = {
         versions: [
             {
                 name: "Modelo Original (Com Disco)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/PlayStation_5_and_DualSense_with_transparent_background.png/800px-PlayStation_5_and_DualSense_with_transparent_background.png",
+                image: "PS5-com-leitor.png",
                 specs: [
                     "CPU: AMD Zen 2 Custom de 8 núcleos e 16 threads @ 3.5 GHz",
                     "Memória RAM: 16 GB GDDR6 Customizada (Banda de 448 GB/s)",
@@ -285,7 +283,7 @@ const consoleData = {
             },
             {
                 name: "Edição Digital",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/PlayStation_5_Digital_Edition_with_DualSense_transparent_background.png/800px-PlayStation_5_Digital_Edition_with_DualSense_transparent_background.png",
+                image: "PS5-sem-leitor.png",
                 specs: [
                     "CPU: AMD Zen 2 Customizado de 8 núcleos @ 3.5 GHz",
                     "Memória RAM: 16 GB GDDR6 Unificada de alta velocidade",
@@ -296,7 +294,7 @@ const consoleData = {
             },
             {
                 name: "PS5 Pro",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/PlayStation_5_and_DualSense_with_transparent_background.png/800px-PlayStation_5_and_DualSense_with_transparent_background.png",
+                image: "PS5-pro.webp",
                 specs: [
                     "CPU: AMD Zen 2 Otimizado com modo de alta frequência",
                     "Memória RAM: 16 GB GDDR6 + 2 GB DDR5 dedicados ao SO",
@@ -320,7 +318,7 @@ const consoleData = {
         versions: [
             {
                 name: "PS VR (Para PS4)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PlayStation_VR_Headset.png/800px-PlayStation_VR_Headset.png",
+                image: "PS-VR-01.webp",
                 specs: [
                     "Painel: Tela OLED de 5.7 polegadas",
                     "Resolução: 1920x1080 Full HD (960x1080 por cada olho)",
@@ -331,7 +329,7 @@ const consoleData = {
             },
             {
                 name: "PS VR2 (Para PS5)",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/PlayStation_VR2.png/800px-PlayStation_VR2.png",
+                image: "PS-VR-02.webp",
                 specs: [
                     "Painel: Telas OLED HDR de última geração",
                     "Resolução: Alta definição de 2000x2040 pixels por olho",
@@ -349,7 +347,6 @@ const consoleData = {
     }
 };
 
-// --- ELEMENTOS DO DOM ---
 const buttons = document.querySelectorAll('.console-btn');
 const displayImg = document.getElementById('display-img');
 const displayTitle = document.getElementById('display-title');
@@ -361,8 +358,6 @@ const displayGames = document.getElementById('display-games');
 
 const versionList = document.getElementById('version-list');
 const currentVersionBtn = document.getElementById('current-version-btn');
-
-// --- LÓGICA PRINCIPAL ---
 
 // Função para atualizar os dados gerais do Console
 function updateConsole(consoleKey) {
@@ -446,8 +441,6 @@ function renderGames(games) {
         displayGames.appendChild(card);
     });
 }
-
-// --- INICIALIZAÇÃO E EVENTOS ---
 
 // Event listeners para os botões do menu superior (PS1, PS2, etc.)
 buttons.forEach(button => {
