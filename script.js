@@ -5,7 +5,7 @@ const consoleData = {
         title: "PlayStation®1",
         tagline: "Onde tudo começou.",
         description: "O console que revolucionou a indústria com o uso de CDs e gráficos em 3D, definindo o padrão para os jogos modernos.",
-        buyLink: "ps1.jpeg",
+        buyLink: "https://www.playstation.com/",
         versions: [
             {
                 name: "Modelo Original (Fat)",
